@@ -98,10 +98,11 @@ Solution: Maintained a record of previous guesses and cross-checked new guesses 
 Solution: Integrated Bootstrap for styling and ensured keyboard accessibility for guess submission.
 
 ### 4. Future Improvements
-Add a timer feature to track how long users take to solve the puzzle.
-Include difficulty levels (e.g., Easy, Medium, Hard) with varying rules or digit lengths.
-Add animations or sound effects for enhanced user engagement.
-Store game progress locally so users can resume later.
+- Add a timer feature to track how long users take to solve the puzzle.
+- Add a feature to eliminate those values if user gets 0 Hits and 0 Misses.
+- Include difficulty levels (e.g., Easy, Medium, Hard) with varying rules or digit lengths.
+- Add animations or sound effects for enhanced user engagement.
+- Store game progress locally so users can resume later.
 
 
 This project is a practical example of how React.js can be used to build an interactive application with dynamic user feedback and robust input handling. It combines logic, design, and user experience seamlessly.
