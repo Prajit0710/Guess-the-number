@@ -5,18 +5,18 @@
 The objective of the "Guess the Number" game is for the player to guess a randomly generated number within a specified range. The game provides feedback on each guess, helping the player adjust their approach until they identify the correct number.
 
 
-#### How It Works:
+### How It Works:
 
-**1. Setting Up the Game:**
+#### **1. Setting Up the Game:**
 The computer generates a random number based on a size chosen by the player. The player can select a number size of 3, 4, or 5 digits.
 Each digit in this number is randomly chosen, with a restriction that the first digit cannot be 0 (ensuring it isn’t inadvertently shortened by leading zeros).
 The game is designed to work with only positive integers.
 
-**2. Making a Guess:**
+#### **2. Making a Guess:**
 The player attempts to guess the number by entering a number of the same length as the generated number (either 3, 4, or 5 digits).
 With each guess, the program compares the player’s input to the actual number and provides feedback to help guide future guesses.
 
-**3. Feedback System:**
+#### **3. Feedback System:**
 After each guess, the program gives feedback using two indicators:
 
 - **Hits (Correct Digits in Correct Position):**
@@ -26,80 +26,78 @@ The count of digits that match exactly in both value and position with the targe
 The count of digits that are correct in value but positioned incorrectly within the guess.
 Using this feedback, the player can adjust their next guess, homing in on the correct number gradually.
 
-**4. Winning the Game:**
+#### **4. Winning the Game:**
 The game continues until the player’s guess matches the generated number exactly, meaning all digits are correct and in the correct position (full B score).
 At this point, the player wins, and the game ends.
 
 
-![image](https://github.com/user-attachments/assets/8f3a8ff8-aeca-404c-a0a8-f5ffe81350b3)
+![alt text](<screenshot1.png>)
 
 
-#### Game Rules:
+### Game Rules:
 
 
-**1. First-Digit Rule:**
+#### **1. First-Digit Rule:**
 The first digit of both the generated number and each player’s guess cannot be 0, ensuring a non-zero starting point for each attempt.
 
-**2. Integer-Only Rule:**
+#### **2. Integer-Only Rule:**
 All digits involved in the guesses and generated numbers are restricted to integers only, with no decimal or fractional values allowed.
 This game structure allows for a fun and engaging experience as the player analyses feedback and makes strategic guesses until they successfully match the target number.
 
 
-![image](https://github.com/user-attachments/assets/8cf01812-9ffc-46f3-8c58-ff6741beaaf8)
-
+![alt text](<screenshot2.png>)
 
 
 ________________________________________
 
 
-###### DEVELOPMENT PROCESS
+## DEVELOPMENT PROCESS
 
-#### 1. Key Features Implemented
+### 1. Key Features Implemented
 
-## Random Number Generation:
+#### **Random Number Generation:**
 Ensured the generated number is unique, non-duplicate, and starts with a non-zero digit.
 
-## User Input Validation:
+#### **User Input Validation:**
 Restricted input to integers with the correct number of digits.
 Prevented duplicate guesses by comparing new inputs to previously submitted guesses.
 Checked for unique digits in the user's guess to maintain validity.
 
-## Feedback Mechanism:
+#### **Feedback Mechanism:**
 Provided detailed feedback on each guess:
 - Hits (B): Correct digits in the correct positions.
 - Misses (G): Correct digits in incorrect positions.
 - Feedback displayed in a visually appealing list with color-coded indicators.
 
-## Game Interaction:
+#### **Game Interaction:**
 "Give Up" Button: Enabled after 5 attempts, revealing the target number if the user chooses to quit.
 Restart Game Option: Reset all game parameters and allowed the user to begin a new game.
 Keyboard Support: Allowed users to submit their guesses by pressing the "Enter" key.
 
-## Iteration Counter:
+#### **Iteration Counter:**
 Displayed the total number of attempts upon successful completion or when the user gave up.
 
-## Game Rules and Introduction Page:
+#### **Game Rules and Introduction Page:**
 Added a separate introduction page with game instructions, improving clarity for first-time users.
 
 
-#### 2. Design Approach
+### **2. Design Approach**
 Used React functional components with hooks like useState for state management.
 Utilized Bootstrap for responsive design and styled components to create an aesthetically pleasing and user-friendly interface.
 Incorporated feedback sections with color-coded styles (green for Hits, orange for Misses) for better user experience.
 
-#### 3. Challenges and Solutions
+### **3. Challenges and Solutions**
 
-## Preventing Duplicate Numbers:
+- **Preventing Duplicate Numbers:**
 Solution: Implemented a Set to ensure unique digits during random number generation and validated user input.
 
-## Duplicate Guesses:
+- **Duplicate Guesses:**
 Solution: Maintained a record of previous guesses and cross-checked new guesses before processing.
 
-## Making the UI Interactive and Accessible:
+- **Making the UI Interactive and Accessible:**
 Solution: Integrated Bootstrap for styling and ensured keyboard accessibility for guess submission.
 
-
-#### 4. Future Improvements
+### 4. Future Improvements
 Add a timer feature to track how long users take to solve the puzzle.
 Include difficulty levels (e.g., Easy, Medium, Hard) with varying rules or digit lengths.
 Add animations or sound effects for enhanced user engagement.
@@ -130,7 +128,8 @@ Ensure you have the following installed on your system:
 
 1. **Install Dependencies**  
    Install the required dependencies by running:
-   ```bash npm install
+   ```bash 
+   npm install
 
 
 2. **Start the Development Server**  
